@@ -7,11 +7,11 @@ function randomNumber (minNum, maxNum) {
 
 // funzione che genera numeri random in un range stabilito
 
-function generateRandomNumbers (min, max, maxnum) {
+function generateRandomNumbers (min, max, maxLen) {
     //imposta il range di numeri da generare
     const arrayRandomNumbers = [];
     // inserire la nungezza del nostro array
-    while (arrayRandomNumbers.length < maxnum) {
+    while (arrayRandomNumbers.length < maxLen) {
             let generateNumber = randomNumber(min, max)
                 //pushare deentro l'array i numeri solo una volta
         if (!arrayRandomNumbers.includes(generateNumber)){

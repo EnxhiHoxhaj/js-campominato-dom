@@ -43,6 +43,17 @@ generateCampo.addEventListener ("click",
         }
     }
 )
+
+// creo l'arrai di numeri di 16 numeri compresi tra 1 e 100
  let arrayBomb = generateRandomNumbers (1, 100, 16);
  console.log(arrayBomb);
-// creo l'arrai di numeri di 16 numeri compresi tra 1 e 100
+// gestire un click sulle caselle
+
+//se la casella clicatta non è presente nell'array delle bombe la casella diventa azzurra 
+    //il numero delle caselle cliccatte viene inserirto in una array
+        // somma dai numeri dentro l'array
+
+// se il numero cliccatto è presente nella lista delle bombe
+    // casella si colora di rosso
+    // gioco finisce con il messaggio di sconfitta e la somma del punteggio
+
