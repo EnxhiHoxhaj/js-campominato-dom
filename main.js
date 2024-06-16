@@ -43,5 +43,6 @@ generateCampo.addEventListener ("click",
         }
     }
 )
- let arrayBomb = 
+ let arrayBomb = generateRandomNumbers (1, 100, 16);
+ console.log(arrayBomb);
 // creo l'arrai di numeri di 16 numeri compresi tra 1 e 100
