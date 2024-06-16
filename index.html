@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Consegna
+    L’utente clicca su un bottone che genererà una griglia di gioco quadrata.
+    Ogni cella ha un numero progressivo, da 1 a 100.
+    Ci saranno quindi 10 caselle per ognuna delle 10 righe.
+    Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.-->
+
+    <!--Contenitore della pagina di gioco-->
+    <div class="game_page">
+        <!--finestra di gioco-->
+        <div class="container">
+            <!--elementi in pagina-->
+            <div class="title">
+                <i class="fa-solid fa-bomb"></i>
+                <h1>Minesweeper</h1>
+                <i class="fa-solid fa-bomb"></i>
+            </div>
+            <div class="intro_play">
+                <strong>Minesweeper is a puzzle video game.[1] In the game, mines (that resemble naval mines in the classic theme) are scattered throughout a board, which is divided into cells.</strong>
+                <h4>How to play : A player selects a cell to open it.</h4>
+                <ul>
+                    <li>
+                        If a player opens a mined cell, the game ends.
+                    </li>
+                    <li>
+                     Otherwise, the opened cell displays a number, indicating the number of mines diagonally
+                    </li>
+                    <li>
+                        Or a blank tile (or "0"), and all adjacent non-mined cells will automatically be opened.
+                    </li>
+                </ul>
+            </div>
+            <!--quntenitore dei quadrati del campo minato-->
+            <div class="campo hidden">
+            </div>
+            <!--bottone per generare il campo di gioco-->
+            
+        </div>
+        <button>Start to play</button>
+    </div>
+    <script type="text/javascript" src="functions.js"></script>  
+    <script type="text/javascript" src="main.js"></script>    
+</body>
+</html>
