@@ -2,6 +2,10 @@
 let campoMinato = document.querySelector(".campo");
 let generateCampo = document.querySelector("button");
 let introductioGame = document.querySelector (".intro_play")
+// creo l'arrai di numeri di 16 numeri compresi tra 1 e 100
+let arrayBomb = generateRandomNumbers (1, 100, 16);
+console.log(arrayBomb);
+
 //gestione del clicK che genererà la griglia
 generateCampo.addEventListener ("click",
     function(){ //tramite un ciclo che mi  genera 100 caselle
@@ -35,18 +39,24 @@ generateCampo.addEventListener ("click",
             // stampare in console il numero
             bombSquare.addEventListener("click",
                 function () {
-                    bombSquare.classList.add("sky_blu");
-                    console.log(i);
+                    if (i !== arrayBomb) {
+                        bombSquare.classList.add("sky_blu");
+                        const somma = [];
+                        somma.push(i);
+                        console.log(somma);
+                    }
+
                 }
             )
 
         }
+
+
     }
 )
 
-// creo l'arrai di numeri di 16 numeri compresi tra 1 e 100
- let arrayBomb = generateRandomNumbers (1, 100, 16);
- console.log(arrayBomb);
+
+
 // gestire un click sulle caselle
 
 //se la casella clicatta non è presente nell'array delle bombe la casella diventa azzurra 

@@ -21,3 +21,12 @@ function generateRandomNumbers (min, max, maxLen) {
     }
     return arrayRandomNumbers;
 }
+
+// funzione per la somma di un array numerico con x elementi
+function sommaDiXNumeri (somma, array) {
+    var somma = 0;
+// Ciclo per sommare gli elementi dell'array
+    for (var i = 0; i < array.length; i++) {
+        somma += array[i];
+    }
+}
