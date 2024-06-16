@@ -43,3 +43,5 @@ generateCampo.addEventListener ("click",
         }
     }
 )
+ let arrayBomb = 
+// creo l'arrai di numeri di 16 numeri compresi tra 1 e 100
