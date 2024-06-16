@@ -30,15 +30,15 @@ generateCampo.addEventListener ("click",
             campoMinato.append(bombSquare);
 
             // creare un click sulle caselle
+            // se cliccate prendono la classe "sky_blu"
+
+            // stampare in console il numero
             bombSquare.addEventListener("click",
                 function () {
                     bombSquare.classList.add("sky_blu");
                     console.log(i);
                 }
             )
-            // se cliccate prendono la classe "sky_blu"
-
-            // stampare in console il numero
 
         }
     }
