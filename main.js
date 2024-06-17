@@ -5,7 +5,7 @@ let introductioGame = document.querySelector (".intro_play")
 // creo l'arrai di numeri di 16 numeri compresi tra 1 e 100
 let arrayBomb = generateRandomNumbers (1, 100, 16);
 console.log(arrayBomb);
-
+let punteggio = 0;
 //gestione del clicK che genererà la griglia
 generateCampo.addEventListener ("click",
     function(){ //tramite un ciclo che mi  genera 100 caselle
@@ -17,6 +17,7 @@ generateCampo.addEventListener ("click",
             // assegnamo la classe "square" e "show_element"
 
             bombSquare.classList.add("square");
+            let numeroIesimo= i;
 
             // aggiungere i numeri alle caselle
             bombSquare.innerHTML = i;
@@ -37,13 +38,17 @@ generateCampo.addEventListener ("click",
             // se cliccate prendono la classe "sky_blu"
 
             // stampare in console il numero
+
+            
             bombSquare.addEventListener("click",
                 function () {
-                    if (i !== arrayBomb) {
-                        bombSquare.classList.add("sky_blu");
-                        const somma = [];
-                        somma.push(i);
-                        console.log(somma);
+                    if (arrayBomb.includes(numeroIesimo)) { // se il numero cliccatto è presente nella lista delle bombe
+                        bombSquare.classList.add("bomb_red");
+                        console.log("hai beccato una bomba");
+                        console.log("il tuo punteggio è:", punteggio);
+                    } else {
+                        this.classList.add("sky_blu");
+                        punteggio ++;
                     }
 
                 }
